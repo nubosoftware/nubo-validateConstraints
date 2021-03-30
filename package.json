@@ -1,0 +1,45 @@
+{
+  "_args": [
+    [
+      "nubo-validateConstraints@https://na01.nubosoftware.com:4872/nubo-validateConstraints/-/nubo-validateConstraints-0.0.45.tgz",
+      "/mnt/diskB/N7/nubomanagement"
+    ]
+  ],
+  "_from": "nubo-validateConstraints@https://na01.nubosoftware.com:4872/nubo-validateConstraints/-/nubo-validateConstraints-0.0.45.tgz",
+  "_id": "nubo-validateConstraints@https://na01.nubosoftware.com:4872/nubo-validateConstraints/-/nubo-validateConstraints-0.0.45.tgz",
+  "_inBundle": false,
+  "_integrity": "sha512-0gICdwVd+TrdKyeCUboq+O1k75TinnPMw6ng4AJTluKGA2sHoZJdkFYz28qNi6drGOpX7VVi5A6nOlHpMJat6w==",
+  "_location": "/nubo-validateConstraints",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "nubo-validateConstraints@https://na01.nubosoftware.com:4872/nubo-validateConstraints/-/nubo-validateConstraints-0.0.45.tgz",
+    "name": "nubo-validateConstraints",
+    "escapedName": "nubo-validateConstraints",
+    "rawSpec": "https://na01.nubosoftware.com:4872/nubo-validateConstraints/-/nubo-validateConstraints-0.0.45.tgz",
+    "saveSpec": "https://na01.nubosoftware.com:4872/nubo-validateConstraints/-/nubo-validateConstraints-0.0.45.tgz",
+    "fetchSpec": "https://na01.nubosoftware.com:4872/nubo-validateConstraints/-/nubo-validateConstraints-0.0.45.tgz"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": false,
+  "_spec": "https://na01.nubosoftware.com:4872/nubo-validateConstraints/-/nubo-validateConstraints-0.0.45.tgz",
+  "_where": "/mnt/diskB/N7/nubomanagement",
+  "author": "",
+  "dependencies": {
+    "underscore": "^1.8.3",
+    "validate.js": "^0.9.0"
+  },
+  "description": "library of constraints objects for validate.js",
+  "license": "ISC",
+  "main": "validateConstraintsPredefine.js",
+  "name": "nubo-validateConstraints",
+  "publishConfig": {
+    "registry": "https://na20.nubosoftware.com:4874/"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "version": "0.0.45"
+}
