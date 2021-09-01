@@ -36,10 +36,10 @@
   "main": "validateConstraintsPredefine.js",
   "name": "nubo-validateConstraints",
   "publishConfig": {
-    "registry": "https://na20.nubosoftware.com:4874/"
+    "registry": "https://na01.nubosoftware.com:4872/"
   },
   "scripts": {
     "test": "node test/test.js"
   },
-  "version": "0.0.45"
+  "version": "0.0.46"
 }

@@ -428,10 +428,10 @@ validate.validators.path = function(value, options, key, attributes) {
         return undefined;
     }
 
-    var legalChars = (/^[a-zA-Z0-9\/@\-_()\ ,.]+$/).test(value);
+    //var legalChars = (/^[a-zA-Z0-9\/@\-_()\ ,.]+$/).test(value);
     var pathManipulation = (/^.*[.]{2}.*$/).test(value);
 
-    if (legalChars && !pathManipulation) {
+    if (/*legalChars && */!pathManipulation) {
         return undefined;
     }
     else {
