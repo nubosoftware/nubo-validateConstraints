@@ -45,9 +45,9 @@ function createConstraints() {
     constraints.activationConstrRequested = _.extend({ presence: true }, sessionIdConstr);
 
     var excludeSpecialCharacters = {
-        "format": "^([^<>'\"\/;`%!$&|]+|N\/A)$",
+        "format": "^([^<>'\"\/;`%!$&|]+|N\/A)$|^$",
         "length": {
-            "minimum": 1,
+            "minimum": 0,
             "maximum": 255
         }
     };
@@ -152,9 +152,9 @@ function createConstraints() {
 
 
     var deviceIdConstr = {
-        "format": "^[.a-zA-Z0-9@_\\-]+$",
+        "format": "^[.a-zA-Z0-9@_\\-]+$|^$",
         "length": {
-            "minimum": 1,
+            "minimum": 0,
             "maximum": 255
         }
     };
@@ -163,9 +163,9 @@ function createConstraints() {
     constraints.deviceIdConstrRequested = _.extend({ presence: true }, deviceIdConstr);
 
     var packageNameConstr = {
-        "format": "^(shared:)?[.a-zA-Z0-9_]+[a-zA-Z0-9_]$",
+        "format": "^(shared:)?[.a-zA-Z0-9_]+[a-zA-Z0-9_]$|^$",
         "length": {
-            "minimum": 1,
+            "minimum": 0,
             "maximum": 255
         }
     };
@@ -203,9 +203,9 @@ function createConstraints() {
     constraints.appIdConstrConstrRequested = _.extend({ presence: true }, appIdConstr);
 
     var passcodeConstr = {
-        "format": "^[^ \t\r\n\v\f]+$", //Non-whitespace characters
+        "format": "^[^ \t\r\n\v\f]+$|^$", //Non-whitespace characters
         "length": {
-            "minimum": 1,
+            "minimum": 0,
             "maximum": 1024
         }
     };
@@ -214,9 +214,9 @@ function createConstraints() {
     constraints.passcodeConstrRequested = _.extend({ presence: true }, passcodeConstr);
 
     var adDomainNameConstr = {
-        format: "^([.a-zA-Z0-9_\\-]+|N\/A)$",
+        format: "^([.a-zA-Z0-9_\\-]+|N\/A)$|^$",
         length: {
-            minimum: 1,
+            minimum: 0,
             maximum: 255
         }
     };
@@ -236,9 +236,9 @@ function createConstraints() {
     constraints.phoneNumberConstrRequested = _.extend({ presence: true }, phoneNumberConstr);
 
     var timeZoneConstr = {
-        format: "^[a-zA-Z0-9/_\\-+]+$",
+        format: "^[a-zA-Z0-9/_\\-+]+$|^$",
         length: {
-            minimum: 1,
+            minimum: 0,
             maximum: 255
         }
     };
@@ -247,9 +247,9 @@ function createConstraints() {
     constraints.timeZoneConstrRequested = _.extend({ presence: true }, timeZoneConstr);
 
     var timeStampConstr = {
-        format: "^[ A-Z0-9:\\-.]+$",
+        format: "^[ A-Z0-9:\\-.]+$|^$",
         length: {
-            minimum: 1,
+            minimum: 0,
             maximum: 255
         }
     };
@@ -269,9 +269,9 @@ function createConstraints() {
     constraints.playerVersionConstrRequested = _.extend({ presence: true }, playerVersionConstr);
 
     var userNameConstr = {
-        "format": "^[.0-9a-zA-Z\\\-@_\/ ]+$",
+        "format": "^[.0-9a-zA-Z\\\-@_\/ ]+$|^$",
         "length": {
-            "minimum": 1,
+            "minimum": 0,
             "maximum": 255
         }
     }
@@ -310,7 +310,7 @@ function createConstraints() {
 
     var openTextConstr = {
         "length": {
-            "minimum": 1,
+            "minimum": 0,
             "maximum": 255
         }
     }
@@ -348,9 +348,9 @@ function createConstraints() {
     constraints.serverUrlConstrRequested = _.extend({ presence: true }, serverUrlConstr);
 
     var freeField = {
-        "format": "^([^<>\/;`%!$&|]+|N\/A)$",
+        "format": "^([^<>\/;`%!$&|]+|N\/A)$|^$",
         "length": {
-            "minimum": 1,
+            "minimum": 0,
             "maximum": 255
         }
     };
@@ -367,17 +367,17 @@ function createConstraints() {
     };
 
     var withServicePassword = {
-        "format": "^[:\\-a-zA-Z0-9@#$&!]+$",
+        "format": "^[:\\-a-zA-Z0-9@#$&!]+$|^$",
         "length": {
-            "minimum": 1,
+            "minimum": 0,
             "maximum": 255
         }
     };
 
     var subscriptionID = {
-        "format": "^([\+\/=a-zA-Z0-9]+|-1)$",
+        "format": "^([\+\/=a-zA-Z0-9]+|-1)$|^$",
         "length": {
-            "minimum": 1,
+            "minimum": 0,
             "maximum": 255
         }
     };

@@ -1,6 +1,6 @@
 {
   "name": "@nubosoftware/nubo-validateconstraints",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "library of constraints objects for validate.js",
   "main": "validateConstraintsPredefine.js",
   "dependencies": {
